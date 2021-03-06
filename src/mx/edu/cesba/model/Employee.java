@@ -10,15 +10,73 @@ package mx.edu.cesba.model;
  * @author Noel
  */
 public class Employee {
-    public int id;
-    public String firstName;
-    public String lastName;
-    public int age;
-    public int phoneNumber;
-    public double salary;
-    public String hiredate;
+    private int id;
+    private String firstName;
+    private String lastName;
+    private int age;
+    private int phoneNumber;
+    private double salary;
+    private String hiredate;
 
-    public void getDetails(){//METODO
+    public void setId(int id){
+        this.id = id;
+    } 
+    public int getId(){
+        return id;
         
+    }
+    public void setfirstName(String firstName){
+        this.firstName = firstName;
+    }
+    
+    public String getfirstName(){
+        return firstName;
+    }
+    public void setage(int age){
+        this.age = age;
+    }
+    
+    public int getage(){
+        return age;
+    }
+    
+    public void setlastName(String firstName){
+        this.lastName = lastName;
+    }
+   
+    public String getlastName(){
+        return lastName;
+    }
+    
+    public void setphoneNumber(String phoneNumber){
+        this.phoneNumber = phoneNumber;
+    }
+    public String getphoneNumber(){
+        return phoneNumber;
+    }
+    
+    public void setsalary(String salary){
+        this.salary = salary;
+    }
+    public String getsalary(){
+        return salary;
+    }
+    public void sethiredate(String hiredate){
+        this.hiredate = hiredate;
+    }
+    public String gethiredate(){
+        return hiredate;
+    }
+    
+
+    
+    public void getDetails(){//METODO
+           System.out.println("id"+ id);
+           System.out.println("firstName"+ firstName);
+           System.out.println("lastName"+ lastName);
+           System.out.println("age"+ age);
+           System.out.println("phoneNumber"+ phoneNumber);
+           System.out.println("salary"+ salary);
+           System.out.println("hiredate"+ hiredate);
 }
 }
