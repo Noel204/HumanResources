@@ -17,13 +17,13 @@ public class Employee {
     private int phoneNumber;
     private double salary;
     private String hiredate;
-
+    
     public void setId(int id){
         this.id = id;
     } 
     public int getId(){
         return id;
-        
+    
     }
     public void setfirstName(String firstName){
         this.firstName = firstName;
@@ -43,22 +43,22 @@ public class Employee {
     public void setlastName(String firstName){
         this.lastName = lastName;
     }
-   
+    
     public String getlastName(){
         return lastName;
     }
     
-    public void setphoneNumber(String phoneNumber){
+    public void setphoneNumber(int phoneNumber){
         this.phoneNumber = phoneNumber;
     }
-    public String getphoneNumber(){
+    public int getphoneNumber(){
         return phoneNumber;
     }
     
-    public void setsalary(String salary){
+    public void setsalary(double salary){
         this.salary = salary;
     }
-    public String getsalary(){
+    public double getsalary(){
         return salary;
     }
     public void sethiredate(String hiredate){
@@ -68,7 +68,11 @@ public class Employee {
         return hiredate;
     }
     
-
+    
+    
+    
+    
+    
     
     public void getDetails(){//METODO
            System.out.println("id"+ id);
