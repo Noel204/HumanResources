@@ -26,14 +26,13 @@ public class HR_Main{
         e1.setsalary ( Double.parseDouble(JOptionPane.showInputDialog(" ingrese sueldo ")));
         e1.sethiredate ( JOptionPane.showInputDialog(" ingrese fecha de contratacion "));
         
-        e2.id = 2;
-        e2.firstName = JOptionPane.showInputDialog(" ingrese nombre ");
-        e2.lastName = JOptionPane.showInputDialog(" ingrese apellido ");
-        e2.age = Integer.parseInt(JOptionPane.showInputDialog(" ingrese la edad "));
-        
-        e2.phoneNumber = Integer.parseInt(JOptionPane.showInputDialog(" ingrese numero telefonico "));
-        e2.salary = Double.parseDouble(JOptionPane.showInputDialog(" ingrese sueldo "));
-        e2.hiredate = JOptionPane.showInputDialog(" ingrese fecha de contratacion ");
+        e2.setId  (1);
+        e2.setfirstName ( JOptionPane.showInputDialog(" ingrese nombre "));
+        e2.setlastName ( JOptionPane.showInputDialog(" ingrese apellido "));
+        e2.setage ( Integer.parseInt(JOptionPane.showInputDialog(" ingrese la edad ")));
+        e2.setphoneNumber ( Integer.parseInt(JOptionPane.showInputDialog(" ingrese numero telefonico ")));
+        e2.setsalary ( Double.parseDouble(JOptionPane.showInputDialog(" ingrese sueldo ")));
+        e2.sethiredate ( JOptionPane.showInputDialog(" ingrese fecha de contratacion "));
         
         e1.getDetails();
         System.out.println("________________________");

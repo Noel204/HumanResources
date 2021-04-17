@@ -68,13 +68,7 @@ public class Employee {
         return hiredate;
     }
     
-    
-    
-    
-    
-    
-    
-    public void getDetails(){//METODO
+       public void getDetails(){//METODO
            System.out.println("id"+ id);
            System.out.println("firstName"+ firstName);
            System.out.println("lastName"+ lastName);
