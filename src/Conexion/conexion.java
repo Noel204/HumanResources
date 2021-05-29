@@ -1,15 +1,32 @@
+package Conexion;
+
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.sql.SQLException;
 
 /*Noel Franciscoco Garcia Trejo
-Matricula: 2022580
+Matricula: 2022580*/
 
-*/
 public class conexion {
-    public static void main(String[] args){
+    Connection con;
+    public conexion(){
+        String driver ="com.mysql.jdbc.Driver";
+        String url= "jdbc:mysql://localhost:3306/humanresources";
+        try{
+            Class.forName(driver);
+            con= DriverManager.getConnection(url, "root", "root");
+      
+    } catch (Exception e){
+    }
+}
+    public Connection getConnection(){
+        return con;
+    }
+}
+ /* public static void main(String[] args){
     //1. REQUERIMIENTOS;
     String driver = "com.mysql.jdbc.Driver";
     //2. URL (CADENA DE CONEXION):
@@ -40,10 +57,18 @@ public class conexion {
                     System.out.println(rs.getString(7));
                     System.out.println("------------------");
                 }
+                while(rs.next()){
+                    System.out.println(rs.getInt("id"));
+                    System.out.println(rs.getString("firstName"));
+                    System.out.println(rs.getString("lastName"));
+                    System.out.println(rs.getDouble("age"));
+                    System.out.println(rs.getInt("phoneNumber"));
+                    System.out.println(rs.getDouble("salary"));
+                    System.out.println(rs.getString("hiredate"));
+                    System.out.println("------------------");
+                }
     }catch (Exception e){
         System.err.println("Sin conexion a la base de datos");
         return;
     }    
- }
-}
-
+}*/
